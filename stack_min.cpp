@@ -58,6 +58,19 @@ void mini()
         cout<<min1<<endl;
     }
 }
+ void display()
+   {
+        if(top==-1)
+        {
+            cout<<"Empty"<<endl;
+            return;
+        }
+        for(int i =0;i!=top+1;i++)
+        {
+            cout<<s[i]<<endl;
+        }
+    }
+ 
 private:
 int min1 = INT_MAX;
 int min2;
@@ -78,6 +91,7 @@ s1.push(-1);
 s1.push(-87);
 s1.push(23);
 s1.mini();
+ s1.display();
     
     return 0;
 }

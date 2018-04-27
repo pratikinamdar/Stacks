@@ -1,3 +1,6 @@
+/* This is a usual stack implementation in C++ with a small modification
+ I have added a function mini() that gives me the smallest element in the stack at anytime in O(1) time unless the stack is empty*/
+
 #include <iostream>
 #include<limits.h>
 using namespace std;

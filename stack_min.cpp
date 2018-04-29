@@ -1,5 +1,5 @@
 /* This is a usual stack implementation in C++ with a small modification
- I have added a function mini() that gives me the smallest element in the stack at anytime in O(1) time unless the stack is empty
+ I have added a function minimum() that gives me the smallest element in the stack at anytime in O(1) time unless the stack is empty
  but this has an O(n) space complexity in the worst case for storing all the minimun elements found in another stack*/
 
 #include <iostream>

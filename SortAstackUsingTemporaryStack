@@ -1,10 +1,4 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
+// This coed sorts a stack in ascending order using another temporary stack
 
 #include <iostream>
 #include<stack>

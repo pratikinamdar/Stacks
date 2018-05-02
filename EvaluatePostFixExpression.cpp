@@ -1,8 +1,8 @@
-//this program evaluates a string that represents a valid integer operand postfix expression and returns the result 
+//this program evaluates a string that represents a valid integer operand postfix expression and returns the result
 
 #include <iostream>
 #include<stack>
-
+#include <math.h>
 using namespace std;
 
 
@@ -41,9 +41,9 @@ int res;
   {
     if(a[i]=='+' ||a[i]=='*' || a[i]=='/' || a[i]=='-' || a[i]=='^' || a[i]=='%')
 	{
-	  op1 = s.top();
+	  op2 = s.top();
 	  s.pop();
-	  op2= s.top();
+	  op1= s.top();
 	  s.pop();
 	  switch(a[i])
 	  {
@@ -51,6 +51,10 @@ int res;
              case '-': res=op1-op2; break;
              case '*': res=op1*op2; break;
              case '/': res=op1/op2;   break;
+             case '%': res=op1%op2;   break;
+             case '^': res=pow(op1,op2);   break;
+
+
 	  }
 	   s.push(res);
 	   if(a[i+1]==' ') i++;
@@ -84,6 +88,6 @@ int res;
 
 int main()
 {
-   cout<<evalPostFix("5 6 * 9 +");
+   cout<<evalPostFix("5 6 * 22 + 1 ^");
     return 0;
 }
